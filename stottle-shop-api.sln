@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server", "src\server\server.csproj", "{499ABE16-4EFE-4BF0-868D-B56937DA9B94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{499ABE16-4EFE-4BF0-868D-B56937DA9B94}.Release|x64.Build.0 = Release|x64
 		{499ABE16-4EFE-4BF0-868D-B56937DA9B94}.Release|x86.ActiveCfg = Release|x86
 		{499ABE16-4EFE-4BF0-868D-B56937DA9B94}.Release|x86.Build.0 = Release|x86
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Debug|x64.ActiveCfg = Debug|x64
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Debug|x64.Build.0 = Debug|x64
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Debug|x86.ActiveCfg = Debug|x86
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Debug|x86.Build.0 = Debug|x86
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Release|x64.ActiveCfg = Release|x64
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Release|x64.Build.0 = Release|x64
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Release|x86.ActiveCfg = Release|x86
+		{934F9EEE-7529-4467-A6CE-C2C6D17EDECE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
