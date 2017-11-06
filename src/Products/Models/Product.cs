@@ -12,7 +12,7 @@ namespace stottle_shop_api.Models.Products
         public int Order { get; set; }
         public double Price { get; set; }
         public IDictionary<int, string> ImageLinks { get; set; }
-        public Category Categories { get; set; }
+        public Category Category { get; set; }
         public IEnumerable<FilterItem> Filters { get; set; }
     }
 }

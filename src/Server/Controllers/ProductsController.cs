@@ -20,6 +20,8 @@ namespace stottle_shop_api.Controllers
                 return NoContent();
             }
 
+            var filters = productFilter.Filters ?? "1,2";
+
             var products = Enumerable
                 .Range(0, 24)
                 .Select(count => new Product
@@ -29,15 +31,15 @@ namespace stottle_shop_api.Controllers
                     Price = count * 2.99,
                     Order = new Random().Next(),
                     ImageLinks = Enumerable.Range(0, 2).Select(imgCount => imgCount).ToDictionary(key => key, val => $"img{val}"),
-                    Categories = new Category
+                    Category = new Category
                     {
                         Code = productFilter.Category,
-                        DisplaName = $"Cat Name {productFilter.Category}"
+                        DisplayName = $"Cat Name {productFilter.Category}"
                     },
-                    Filters = productFilter.Filters.Split(',').Select(filterId => new FilterItem
+                    Filters = filters.Split(',').Select(filterId => new FilterItem
                     {
                         Code = filterId,
-                        DisplaName = $"filter {filterId}"
+                        DisplayName = $"filter {filterId}"
                     })
                 });
             return Ok(products);

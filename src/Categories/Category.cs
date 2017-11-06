@@ -4,7 +4,7 @@ namespace stottle_shop_api.Categories
 {
     public class Category : ICategory
     {
-        public string DisplaName { get; set; }
+        public string DisplayName { get; set; }
         public string Code { get; set; } 
         public IEnumerable<ICategory> ChildCategories { get; set; }
     }

@@ -21,7 +21,7 @@ namespace stottle_shop_api.Controllers
 
             var items = Enumerable.Range(0, 10).Select(count => new FilterItem
             {
-                DisplaName = $"Item {count}",
+                DisplayName = $"Item {count}",
                 Code = $"Item{count}"
             });
 

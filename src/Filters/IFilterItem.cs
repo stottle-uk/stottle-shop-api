@@ -4,7 +4,7 @@ namespace stottle_shop_api.Filters
 {
     public interface IFilterItem
     {
-        string DisplaName { get; set; }
+        string DisplayName { get; set; }
         string Code { get; set; }
     }
 }

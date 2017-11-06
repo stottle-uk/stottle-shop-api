@@ -22,8 +22,13 @@ namespace stottle_shop_api.Controllers
                 .Range(0, 8)
                 .Select(count => new Category
                 {
-                    Code = "",
-                    DisplaName = $"Cat {count}"
+                    Code = $"cat{count}",
+                    DisplayName = $"Cat {count}",
+                    ChildCategories = Enumerable.Range(0, 5).Select(childCount => new Category
+                    {
+                        Code = $"cat{childCount}",
+                        DisplayName = $"Child {childCount}",
+                    })
                 });
 
             return Ok(categories);
