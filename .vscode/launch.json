@@ -5,11 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (web)2",
+            "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}/src/server/bin/Debug/netcoreapp2.0/server.dll",
+            "program": "${workspaceRoot}/src/Server/bin/Debug/netcoreapp2.0/server.dll",
             "args": [],
             "cwd": "${workspaceRoot}",
             "stopAtEntry": false,
@@ -31,7 +31,24 @@
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "sourceFileMap": {
-                "/Views": "${workspaceRoot}/src/server/Views"
+                "/Views": "${workspaceRoot}/src/Server/Views"
+            }
+        },
+        {
+            "name": "Launch Tests",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceRoot}/tests/bin/Debug/netcoreapp2.0/Tests.dll",
+            "args": [
+                "test"
+            ],
+            "cwd": "${workspaceRoot}/rests",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
             }
         },
         {

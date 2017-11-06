@@ -12,4 +12,9 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Categories\Categories.csproj" />
+    <ProjectReference Include="..\Filters\Filters.csproj" />
+    <ProjectReference Include="..\Products\Products.csproj" />
+  </ItemGroup>
 </Project>

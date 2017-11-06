@@ -4,15 +4,9 @@ namespace stottle_shop_api.Filters
 {
     public interface IFilter
     {
-        string DisplaName { get; set; }
+        string DisplayName { get; set; }
         string Code { get; set; }
-        IEnumerable<IFilterItem> Items { get; set; }
-    }
-
-    public interface IFilterItem
-    {
-        string DisplaName { get; set; }
-        string Code { get; set; }
+        IEnumerable<FilterItem> Items { get; set; }
     }
 }
 
