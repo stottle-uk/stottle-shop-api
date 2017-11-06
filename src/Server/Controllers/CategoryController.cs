@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using stottle_shop_api.Categories;
+using stottle_shop_api.Filters;
 
 namespace stottle_shop_api.Controllers
 {
@@ -28,6 +29,7 @@ namespace stottle_shop_api.Controllers
                     {
                         Code = $"cat{childCount}",
                         DisplayName = $"Child {childCount}",
+                        Filters = Enumerable.Range(0, 3).Select(filCount => $"fil{filCount}")
                     })
                 });
 
