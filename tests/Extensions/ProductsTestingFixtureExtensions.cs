@@ -17,7 +17,7 @@ namespace tests.Extensions
             var filter = Builders<Product>.Filter
                 .Where(p => p.DisplayName != "");
 
-            fixture.ProductsCollection.DeleteMany(filter);
+            fixture.Collection.DeleteMany(filter);
             return fixture;
         }
 
@@ -38,7 +38,7 @@ namespace tests.Extensions
                 })
                 .OrderBy(p => p.Id);
 
-            fixture.ProductsCollection.InsertMany(products);
+            fixture.Collection.InsertMany(products);
             return fixture;
         }
 

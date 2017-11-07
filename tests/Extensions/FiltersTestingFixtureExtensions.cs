@@ -13,7 +13,7 @@ namespace tests.Extensions
             var filter = Builders<Filter>.Filter
                 .Where(p => p.DisplayName != "");
 
-            fixture.FiltersCollection.DeleteMany(filter);
+            fixture.Collection.DeleteMany(filter);
             return fixture;
         }
 
@@ -36,7 +36,7 @@ namespace tests.Extensions
                     Items = items
                 });
 
-            fixture.FiltersCollection.InsertMany(filters);
+            fixture.Collection.InsertMany(filters);
             return fixture;
         }
 

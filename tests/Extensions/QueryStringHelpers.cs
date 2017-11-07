@@ -5,7 +5,7 @@ using System.Web;
 
 namespace tests.Extensions
 {
-    public static class UrlHelper
+    public static class QueryStringHelpers
     {
         public static string ToQueryString<T>(this T obj)
         {

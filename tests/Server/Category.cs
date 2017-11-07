@@ -1,9 +1,9 @@
 using System.Net;
 using Newtonsoft.Json;
+using stottle_shop_api.Categories.Models;
 using tests.Extensions;
 using tests.TestingFixtures;
 using Xunit;
-using stottle_shop_api.Categories.Models;
 
 namespace tests.Server
 {
