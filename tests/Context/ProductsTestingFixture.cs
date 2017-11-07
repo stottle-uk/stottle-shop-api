@@ -8,14 +8,14 @@ using stottle_shop_api.Products.Models;
 
 namespace tests.Context
 {
-    public class MyTestingFixture : IDisposable
+    public class ProductsTestingFixture : IDisposable
     {
         private readonly MongoClient _mongoClient;
         private readonly TestServer _server;
         public IMongoCollection<Product> ProductsCollection { get; private set; }
         public HttpClient HttpClient { get; private set; }
 
-        public MyTestingFixture()
+        public ProductsTestingFixture()
         {
             _server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
             SetupHttpClient();

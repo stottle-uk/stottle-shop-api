@@ -7,11 +7,11 @@ using Xunit;
 
 namespace tests.Server
 {
-    public class Products : IClassFixture<MyTestingFixture>
+    public class Products : IClassFixture<ProductsTestingFixture>
     {
-        private readonly MyTestingFixture _fixture;
+        private readonly ProductsTestingFixture _fixture;
 
-        public Products(MyTestingFixture fixture)
+        public Products(ProductsTestingFixture fixture)
         {
             _fixture = fixture
                 .Given_the_products_collection_is_empty()
@@ -20,9 +20,13 @@ namespace tests.Server
 
         [Theory]
         [InlineData(1, 0, HttpStatusCode.NoContent)]
-        [InlineData(2, 1000, HttpStatusCode.OK)]
-        [InlineData(3, 500, HttpStatusCode.OK)]
-        public void Should_return_products_using_search_criteria(int criteriaSet, int productCount, HttpStatusCode expectedHttpStatusCode)
+        [InlineData(2, 111, HttpStatusCode.OK)]
+        [InlineData(3, 333, HttpStatusCode.OK)]
+        [InlineData(4, 250, HttpStatusCode.OK)]
+        [InlineData(5, 166, HttpStatusCode.OK)]
+        [InlineData(6, 18, HttpStatusCode.OK)]
+        [InlineData(7, 1000, HttpStatusCode.OK)]
+        public void Should_return_products_using_search_criteria(int criteriaSet, int productsFound, HttpStatusCode expectedHttpStatusCode)
         {
             var lastHttpResponse = _fixture.When_products_endpoint_called_with_search_criteria(criteriaSet);
             Assert.Equal(expectedHttpStatusCode, lastHttpResponse.StatusCode);
@@ -31,7 +35,7 @@ namespace tests.Server
             if (!string.IsNullOrWhiteSpace(responseString))
             {
                 var deserialisedProducts = JsonConvert.DeserializeObject<Product[]>(responseString);
-                Assert.Equal(productCount, deserialisedProducts.Length);
+                Assert.Equal(productsFound, deserialisedProducts.Length);
             }
         }
     }
