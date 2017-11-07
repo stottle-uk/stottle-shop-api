@@ -1,7 +1,5 @@
-using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using stottle_shop_api.Categories;
+using stottle_shop_api.Categories.Models;
 using stottle_shop_api.Filters;
 
 namespace stottle_shop_api.Products.Models

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using MongoDB.Driver;
-using stottle_shop_api.Categories;
+using stottle_shop_api.Categories.Models;
 using stottle_shop_api.Filters;
 using stottle_shop_api.Products.Models;
 using tests.Context;

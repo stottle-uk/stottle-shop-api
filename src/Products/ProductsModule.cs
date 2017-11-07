@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using stottle_shop_api.Products.Repositories;
 
-namespace stottle_shop_api.Models.Products
+namespace stottle_shop_api.Products
 {
     public static class ProductsModule
     {

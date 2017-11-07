@@ -1,4 +1,3 @@
-using System;
 using System.Net;
 using System.Net.Http;
 using Microsoft.AspNetCore.Hosting;
@@ -6,40 +5,45 @@ using Microsoft.AspNetCore.TestHost;
 using Newtonsoft.Json;
 using stottle_shop_api;
 using stottle_shop_api.Categories;
+using tests.Context;
 using Xunit;
+using tests.Extensions;
+using stottle_shop_api.Categories.Models;
 
 namespace tests.Server
 {
-    public class Categories
+    public class Categories : IClassFixture<CategoryTestingFixture>
     {
-        private readonly TestServer _server;
-        private readonly HttpClient _client;
+        private readonly CategoryTestingFixture _fixture;
 
-        public Categories()
+        public Categories(CategoryTestingFixture fixture)
         {
-            _server = new TestServer(new WebHostBuilder()
-                .UseStartup<Startup>());
-            _client = _server.CreateClient();
+            _fixture = fixture
+                .Given_the_categories_collection_is_empty();
         }
 
         [Fact]
-        public async void Should_return_category_by_id()
+        public void Should_return_categories()
         {
-            var response = await _client.GetAsync("/api/category/1");
-            Assert.Equal(response.StatusCode, HttpStatusCode.OK);
+            var httpResponse = _fixture
+                .Given_the_categories_collection_has_categories(8)
+                .When_categories_endpoint_called();
 
-            var responseString = await response.Content.ReadAsStringAsync();
+            Assert.Equal(HttpStatusCode.OK, httpResponse.StatusCode);
 
+            var responseString = httpResponse.Content.ReadAsStringAsync().Result;
             var categories = JsonConvert.DeserializeObject<Category[]>(responseString);
 
-            Assert.Equal(categories.Length, 8);
+            Assert.Equal(8, categories.Length);
         }
 
         [Fact]
-        public async void Should_return_404_when_category_is_not_found()
+        public void Should_return_204_when_categories_are_not_found()
         {
-            var response = await _client.GetAsync("/api/category/notfound");
-            Assert.Equal(response.StatusCode, HttpStatusCode.NotFound);
+            var httpResponse = _fixture
+                .When_categories_endpoint_called();
+
+            Assert.Equal(HttpStatusCode.NoContent, httpResponse.StatusCode);
         }
     }
 }

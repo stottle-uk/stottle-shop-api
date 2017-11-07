@@ -13,7 +13,7 @@ namespace stottle_shop_api.Controllers
 
         public ProductsController(IReadProducts productReader)
         {
-            _productReader = productReader;
+            _productReader = productReader ?? throw new System.ArgumentNullException(nameof(productReader));
         }
 
         [HttpGet]

@@ -4,18 +4,18 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using MongoDB.Driver;
 using stottle_shop_api;
-using stottle_shop_api.Products.Models;
+using stottle_shop_api.Categories.Models;
 
 namespace tests.Context
 {
-    public class ProductsTestingFixture : IDisposable
+    public class CategoryTestingFixture : IDisposable
     {
         private readonly MongoClient _mongoClient;
         private readonly TestServer _server;
-        public IMongoCollection<Product> ProductsCollection { get; private set; }
+        public IMongoCollection<Category> CategoryCollection { get; private set; }
         public HttpClient HttpClient { get; private set; }
 
-        public ProductsTestingFixture()
+        public CategoryTestingFixture()
         {
             _server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
             SetupHttpClient();
@@ -27,8 +27,8 @@ namespace tests.Context
         private void SetupProductsCollection()
         {
             var db = _mongoClient.GetDatabase("stottle-products");
-            db.DropCollection("products");
-            ProductsCollection = db.GetCollection<Product>("products");
+            db.DropCollection("categories");
+            CategoryCollection = db.GetCollection<Category>("categories");
         }
 
         private void SetupHttpClient()

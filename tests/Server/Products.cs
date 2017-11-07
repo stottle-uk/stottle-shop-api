@@ -30,10 +30,10 @@ namespace tests.Server
         [InlineData(9, 6, HttpStatusCode.OK)]
         public void Should_return_products_using_search_criteria(int criteriaSet, int expectedProductsReturned, HttpStatusCode expectedHttpStatusCode)
         {
-            var lastHttpResponse = _fixture.When_products_endpoint_called_with_search_criteria(criteriaSet);
-            Assert.Equal(expectedHttpStatusCode, lastHttpResponse.StatusCode);
+            var httpResponse = _fixture.When_products_endpoint_called_with_search_criteria(criteriaSet);
+            Assert.Equal(expectedHttpStatusCode, httpResponse.StatusCode);
 
-            var responseString = lastHttpResponse.Content.ReadAsStringAsync().Result;
+            var responseString = httpResponse.Content.ReadAsStringAsync().Result;
             if (!string.IsNullOrWhiteSpace(responseString))
             {
                 var deserialisedProducts = JsonConvert.DeserializeObject<Product[]>(responseString);

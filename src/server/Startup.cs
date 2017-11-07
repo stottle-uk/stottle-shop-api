@@ -2,7 +2,8 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using stottle_shop_api.Models.Products;
+using stottle_shop_api.Categories;
+using stottle_shop_api.Products;
 
 namespace stottle_shop_api
 {
@@ -20,6 +21,7 @@ namespace stottle_shop_api
             services.AddMvc();
             services.AddCors();
             services.AddProductsModule();
+            services.AddCategoriesModule();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
