@@ -7,7 +7,7 @@ namespace stottle_shop_api.Categories
     {
         string DisplayName { get; set; }
         string Code { get; set; }
-        IEnumerable<ICategory> ChildCategories { get; set; }
+        IEnumerable<Category> ChildCategories { get; set; }
         IEnumerable<string> Filters { get; set; }
     }
 }
