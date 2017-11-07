@@ -6,10 +6,10 @@ namespace stottle_shop_api.Categories
 {
     public static class ProductsModule
     {
-        public static void AddCategoriesModule(this IServiceCollection services, string connectionString, string databaseName)
+        public static void AddCategoriesModule(this IServiceCollection services, string connectionString)
         {
-            services.AddTransient<IMongoDatabase>(ctx => new MongoClient(connectionString).GetDatabase(databaseName));
-            services.AddTransient<IReadCategories, MongoRepository>();
+            var mongoUrl = new MongoUrl(connectionString);
+            services.AddTransient<IMongoDatabase>(ctx => new MongoClient(mongoUrl).GetDatabase(mongoUrl.DatabaseName));            services.AddTransient<IReadCategories, MongoRepository>();
         }
     }
 }
