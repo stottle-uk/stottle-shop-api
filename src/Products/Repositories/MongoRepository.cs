@@ -21,10 +21,12 @@ namespace stottle_shop_api.Products.Repositories
 
         public async Task<IEnumerable<Product>> ReadAsync(ProductFilterCriteria searchCriteria)
         {
-            var filter = searchCriteria.CreateFilter()
-        ;
+            var filter = searchCriteria.CreateFilter();
+            
             return await _collection
                 .Find(filter)
+                .Limit(searchCriteria.Limit)
+                .Skip(searchCriteria.Skip)
                 .ToListAsync()
                 .ConfigureAwait(false);
         }

@@ -21,10 +21,10 @@ namespace tests.Extensions
             return fixture;
         }
 
-        public static ProductsTestingFixture Given_the_products_collection_has_products(this ProductsTestingFixture fixture)
+        public static ProductsTestingFixture Given_the_products_collection_has_products(this ProductsTestingFixture fixture, int maxProducts)
         {
             var products = Enumerable
-                .Range(0, 1000)
+                .Range(0, maxProducts)
                 .Select(count => new Product
                 {
                     Id = count.ToString(),
@@ -35,7 +35,8 @@ namespace tests.Extensions
                     ImageLinks = Enumerable.Range(0, 2).Select(imgCount => imgCount).ToDictionary(key => key.ToString(), val => $"img{val}"),
                     Category = count.GetCategory(),
                     Filters = count.GetFilters().ToList()
-                });
+                })
+                .OrderBy(p => p.Id);
 
             fixture.ProductsCollection.InsertMany(products);
             return fixture;
@@ -65,7 +66,7 @@ namespace tests.Extensions
             {
                 Category = "",
                 Filters = "",
-                SearchTerm = "product 1"
+                SearchTerm = "product 12"
             });
 
             sets.Add(3, new ProductFilterCriteria
@@ -101,6 +102,22 @@ namespace tests.Extensions
                 Category = "",
                 Filters = "",
                 SearchTerm = ""
+            });
+
+            sets.Add(8, new ProductFilterCriteria
+            {
+                Category = "",
+                Filters = "",
+                SearchTerm = "",
+                Limit = 12
+            });
+
+            sets.Add(9, new ProductFilterCriteria
+            {
+                Category = "",
+                Filters = "",
+                SearchTerm = "product 91",
+                Skip = 5
             });
 
             return sets.First(s => s.Key == criteriaSet).Value;

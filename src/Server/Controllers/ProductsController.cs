@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using stottle_shop_api.Categories;
-using stottle_shop_api.Filters;
-using stottle_shop_api.Products;
 using stottle_shop_api.Products.Models;
 using stottle_shop_api.Products.Repositories;
 
@@ -21,10 +16,12 @@ namespace stottle_shop_api.Controllers
             _productReader = productReader;
         }
 
-        // GET api/values/5
         [HttpGet]
         public async Task<IActionResult> Get(ProductFilterCriteria productFilter)
         {
+            var countLimited = productFilter.Limit > 1000 || productFilter.Limit == 0 ? 1000: productFilter.Limit;
+            productFilter.Limit = countLimited;
+
             var products = await _productReader.ReadAsync(productFilter).ConfigureAwait(false);
             if (!products.Any()) 
             {
