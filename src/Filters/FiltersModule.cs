@@ -9,7 +9,8 @@ namespace stottle_shop_api.Categories
         public static void AddFiltersModule(this IServiceCollection services, string connectionString)
         {
             var mongoUrl = new MongoUrl(connectionString);
-            services.AddTransient<IMongoDatabase>(ctx => new MongoClient(mongoUrl).GetDatabase(mongoUrl.DatabaseName));            services.AddTransient<IReadFilters, MongoRepository>();
+            services.AddTransient<IMongoDatabase>(ctx => new MongoClient(mongoUrl).GetDatabase(mongoUrl.DatabaseName));            
+            services.AddTransient<IReadFilters, MongoRepository>();
         }
     }
 }
