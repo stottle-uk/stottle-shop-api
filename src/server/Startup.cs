@@ -18,11 +18,14 @@ namespace stottle_shop_api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString = "mongodb://192.168.1.72:27017";
+            var databaseName = "stottle-shop";
+
             services.AddMvc();
             services.AddCors();
-            services.AddProductsModule();
-            services.AddCategoriesModule();
-            services.AddFiltersModule();
+            services.AddProductsModule(connectionString, databaseName);
+            services.AddCategoriesModule(connectionString, databaseName);
+            services.AddFiltersModule(connectionString, databaseName);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

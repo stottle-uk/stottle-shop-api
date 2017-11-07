@@ -11,11 +11,8 @@ namespace stottle_shop_api.Products.Repositories
     {
         private readonly IMongoCollection<Product> _collection;
 
-        public MongoRepository()
+        public MongoRepository(IMongoDatabase db)
         {
-            var client = new MongoClient();
-            var db = client.GetDatabase("stottle-products");
-
             _collection = db.GetCollection<Product>("products");
         }
 

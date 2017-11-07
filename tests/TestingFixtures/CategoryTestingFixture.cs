@@ -20,13 +20,13 @@ namespace tests.TestingFixtures
             _server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
             SetupHttpClient();
 
-            _mongoClient = new MongoClient();
+            _mongoClient = new MongoClient("mongodb://192.168.1.72:27017");
             SetupCategoriesCollection();
         }
 
         private void SetupCategoriesCollection()
         {
-            var db = _mongoClient.GetDatabase("stottle-products");
+            var db = _mongoClient.GetDatabase("stottle-shop");
             db.DropCollection("categories");
             CategoryCollection = db.GetCollection<Category>("categories");
         }

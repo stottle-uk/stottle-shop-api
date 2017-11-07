@@ -9,11 +9,8 @@ namespace stottle_shop_api.Categories.Repositories
     {
         private readonly IMongoCollection<Category> _collection;
 
-        public MongoRepository()
+        public MongoRepository(IMongoDatabase db)
         {
-            var client = new MongoClient();
-            var db = client.GetDatabase("stottle-products");
-
             _collection = db.GetCollection<Category>("categories");
         }
 

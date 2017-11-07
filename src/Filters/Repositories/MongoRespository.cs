@@ -10,11 +10,8 @@ namespace stottle_shop_api.Filters.Repositories
     {
         private readonly IMongoCollection<Filter> _collection;
 
-        public MongoRepository()
+        public MongoRepository(IMongoDatabase db)
         {
-            var client = new MongoClient();
-            var db = client.GetDatabase("stottle-products");
-
             _collection = db.GetCollection<Filter>("filters");
         }
 
