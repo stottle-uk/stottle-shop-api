@@ -18,7 +18,6 @@ namespace stottle_shop_api.Controllers
             _filterReader = filterReader ?? throw new System.ArgumentNullException(nameof(filterReader));
         }
 
-        // GET api/values/5
         [HttpGet("{ids}")]
         public async Task<IActionResult> Get(string ids)
         {
