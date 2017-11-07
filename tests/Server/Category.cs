@@ -1,13 +1,8 @@
 using System.Net;
-using System.Net.Http;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.TestHost;
 using Newtonsoft.Json;
-using stottle_shop_api;
-using stottle_shop_api.Categories;
-using tests.Context;
-using Xunit;
 using tests.Extensions;
+using tests.TestingFixtures;
+using Xunit;
 using stottle_shop_api.Categories.Models;
 
 namespace tests.Server

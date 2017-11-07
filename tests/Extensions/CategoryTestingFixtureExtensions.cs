@@ -2,7 +2,7 @@ using System.Linq;
 using System.Net.Http;
 using MongoDB.Driver;
 using stottle_shop_api.Categories.Models;
-using tests.Context;
+using tests.TestingFixtures;
 
 namespace tests.Extensions
 {

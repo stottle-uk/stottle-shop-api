@@ -22,6 +22,7 @@ namespace stottle_shop_api
             services.AddCors();
             services.AddProductsModule();
             services.AddCategoriesModule();
+            services.AddFiltersModule();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

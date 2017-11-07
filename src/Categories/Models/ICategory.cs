@@ -7,6 +7,7 @@ namespace stottle_shop_api.Categories.Models
     {
         string DisplayName { get; set; }
         string Code { get; set; }
+        bool IsActive { get; set; }
         IEnumerable<Category> ChildCategories { get; set; }
         IEnumerable<string> Filters { get; set; }
     }

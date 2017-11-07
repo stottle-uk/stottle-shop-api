@@ -1,52 +1,45 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Web;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.TestHost;
 using Newtonsoft.Json;
-using stottle_shop_api;
-using stottle_shop_api.Categories;
-using stottle_shop_api.Filters;
+using stottle_shop_api.Filters.Models;
 using tests.Extensions;
+using tests.TestingFixtures;
 using Xunit;
 
 namespace tests.Server
 {
-    public class Filters
+    public class Filters : IClassFixture<FiltersTestingFixture>
     {
-        private readonly TestServer _server;
-        private readonly HttpClient _client;
+        private readonly FiltersTestingFixture _fixture;
 
-        public Filters()
+        public Filters(FiltersTestingFixture fixture)
         {
-            _server = new TestServer(new WebHostBuilder()
-                .UseStartup<Startup>());
-            _client = _server.CreateClient();
+            _fixture = fixture
+                .Given_the_filters_collection_is_empty();
         }
 
         [Fact]
-        public async void Should_return_filters_by_id()
+        public void Should_return_filters_by_id()
         {
-            var response = await _client.GetAsync($"/api/filters/1,2,3");
+            var httpResponse = _fixture
+                .Given_the_filters_collection_has_filters(4)
+                .When_filters_endpoint_called();
 
-            Assert.Equal(response.StatusCode, HttpStatusCode.OK);
+            Assert.Equal(HttpStatusCode.OK, httpResponse.StatusCode);
 
-            var responseString = await response.Content.ReadAsStringAsync();
+            var responseString = httpResponse.Content.ReadAsStringAsync().Result;
 
             var filters = JsonConvert.DeserializeObject<Filter[]>(responseString);
 
-            Assert.Equal(filters.Length, 2);
+            Assert.Equal(3, filters.Length);
         }
 
         [Fact]
-        public async void Should_return_404_when_filters_are_not_found()
+        public void Should_return_204_when_filters_are_not_found()
         {
-            var response = await _client.GetAsync("/api/filters/notfound");
-            Assert.Equal(response.StatusCode, HttpStatusCode.NotFound);
+            var httpResponse = _fixture
+                .When_filters_endpoint_called();
+
+            Assert.Equal(HttpStatusCode.NoContent, httpResponse.StatusCode);
         }
     }
 

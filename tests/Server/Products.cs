@@ -1,7 +1,7 @@
 using System.Net;
 using Newtonsoft.Json;
 using stottle_shop_api.Products.Models;
-using tests.Context;
+using tests.TestingFixtures;
 using tests.Extensions;
 using Xunit;
 
