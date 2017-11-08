@@ -9,7 +9,7 @@ namespace stottle_shop_api.Products
         public static void AddProductsModule(this IServiceCollection services, string connectionString)
         {
             var mongoUrl = new MongoUrl(connectionString);
-            services.AddTransient<IMongoDatabase>(ctx => new MongoClient(mongoUrl).GetDatabase(mongoUrl.DatabaseName));
+            services.AddTransient(ctx => new MongoClient(mongoUrl).GetDatabase(mongoUrl.DatabaseName));
             services.AddTransient<IReadProducts, MongoRepository>();
         }
     }

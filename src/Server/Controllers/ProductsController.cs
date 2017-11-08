@@ -1,8 +1,8 @@
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using stottle_shop_api.Products.Models;
 using stottle_shop_api.Products.Repositories;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace stottle_shop_api.Controllers
 {
