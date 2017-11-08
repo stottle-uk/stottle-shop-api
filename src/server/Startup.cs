@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using stottle_shop_api.Categories;
+using stottle_shop_api.Filters;
 using stottle_shop_api.Products;
 
 namespace stottle_shop_api
