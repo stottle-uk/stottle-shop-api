@@ -3,8 +3,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using stottle_shop_api.Categories;
+using stottle_shop_api.Data.TestData;
 using stottle_shop_api.Filters;
 using stottle_shop_api.Products;
+using stottle_shop_api.Products.Repositories;
+using System;
 
 namespace stottle_shop_api
 {
@@ -42,7 +45,22 @@ namespace stottle_shop_api
                         );
             }
 
+            if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("USE_TEST_DATA")))
+            {
+                app.UseTestData();
+            };
+
             app.UseMvcWithDefaultRoute();
         }
+    }
+}
+
+public static class thing
+{
+    public static IApplicationBuilder UseTestData(this IApplicationBuilder builder)
+    {
+        var prod = builder.ApplicationServices.GetRequiredService<IWriteProducts>();
+        prod.InsertAsync(TestProductData.GetProducts(2000));
+        return builder;
     }
 }

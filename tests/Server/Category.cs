@@ -18,6 +18,15 @@ namespace tests.Server
         }
 
         [Fact]
+        public void Should_return_204_when_categories_are_not_found()
+        {
+            var httpResponse = _fixture
+                .When_categories_endpoint_called();
+
+            Assert.Equal(HttpStatusCode.NoContent, httpResponse.StatusCode);
+        }
+
+        [Fact]
         public void Should_return_categories()
         {
             var httpResponse = _fixture
@@ -30,15 +39,6 @@ namespace tests.Server
             var categories = JsonConvert.DeserializeObject<Category[]>(responseString);
 
             Assert.Equal(8, categories.Length);
-        }
-
-        [Fact]
-        public void Should_return_204_when_categories_are_not_found()
-        {
-            var httpResponse = _fixture
-                .When_categories_endpoint_called();
-
-            Assert.Equal(HttpStatusCode.NoContent, httpResponse.StatusCode);
         }
     }
 }

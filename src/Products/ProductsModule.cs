@@ -11,6 +11,7 @@ namespace stottle_shop_api.Products
             var mongoUrl = new MongoUrl(connectionString);
             services.AddTransient(ctx => new MongoClient(mongoUrl).GetDatabase(mongoUrl.DatabaseName));
             services.AddTransient<IReadProducts, MongoRepository>();
+            services.AddTransient<IWriteProducts, MongoRepository>();
         }
     }
 }

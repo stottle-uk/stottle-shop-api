@@ -16,6 +16,15 @@ namespace tests.Server
             _fixture = fixture
                 .Given_the_filters_collection_is_empty();
         }
+        
+        [Fact]
+        public void Should_return_204_when_filters_are_not_found()
+        {
+            var httpResponse = _fixture
+                .When_filters_endpoint_called();
+
+            Assert.Equal(HttpStatusCode.NoContent, httpResponse.StatusCode);
+        }
 
         [Fact]
         public void Should_return_filters_by_id()
@@ -33,14 +42,6 @@ namespace tests.Server
             Assert.Equal(3, filters.Length);
         }
 
-        [Fact]
-        public void Should_return_204_when_filters_are_not_found()
-        {
-            var httpResponse = _fixture
-                .When_filters_endpoint_called();
-
-            Assert.Equal(HttpStatusCode.NoContent, httpResponse.StatusCode);
-        }
     }
 
 }

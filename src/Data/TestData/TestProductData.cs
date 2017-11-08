@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Data
+namespace stottle_shop_api.Data.TestData
 {
     public static class TestProductData
     {
