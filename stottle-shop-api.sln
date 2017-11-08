@@ -4,20 +4,22 @@ VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{38BEDBC3-C8B7-4039-A9CE-BEB6B7ACE039}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "server", "src\Server\Server.csproj", "{6B9050E3-ACAD-4475-8BEA-79A0FD6D9E92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "src\Server\Server.csproj", "{6B9050E3-ACAD-4475-8BEA-79A0FD6D9E92}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "categories", "src\Categories\Categories.csproj", "{59915A25-D1FC-4468-A403-8BB4FC6AB947}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Categories", "src\Categories\Categories.csproj", "{59915A25-D1FC-4468-A403-8BB4FC6AB947}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "filters", "src\Filters\Filters.csproj", "{2A15909E-2740-4B08-8E71-EF5BB4A20863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Filters", "src\Filters\Filters.csproj", "{2A15909E-2740-4B08-8E71-EF5BB4A20863}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products", "src\Products\Products.csproj", "{F534A344-22C5-4FA6-8EE1-2342DE810976}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4E9DCBE5-EDE4-4102-B600-1BD8BB8F6725}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tests", "tests\Tests.csproj", "{5DD35384-9B35-49FB-9390-2F8D904D6B8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "tests\Tests.csproj", "{5DD35384-9B35-49FB-9390-2F8D904D6B8A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2A15909E-2740-4B08-8E71-EF5BB4A20863} = {2A15909E-2740-4B08-8E71-EF5BB4A20863}
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "src\Data\Data.csproj", "{06F3BC5D-DC35-4E0A-B4DB-6E815447155E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5DD35384-9B35-49FB-9390-2F8D904D6B8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DD35384-9B35-49FB-9390-2F8D904D6B8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DD35384-9B35-49FB-9390-2F8D904D6B8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06F3BC5D-DC35-4E0A-B4DB-6E815447155E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06F3BC5D-DC35-4E0A-B4DB-6E815447155E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06F3BC5D-DC35-4E0A-B4DB-6E815447155E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06F3BC5D-DC35-4E0A-B4DB-6E815447155E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{2A15909E-2740-4B08-8E71-EF5BB4A20863} = {38BEDBC3-C8B7-4039-A9CE-BEB6B7ACE039}
 		{F534A344-22C5-4FA6-8EE1-2342DE810976} = {38BEDBC3-C8B7-4039-A9CE-BEB6B7ACE039}
 		{5DD35384-9B35-49FB-9390-2F8D904D6B8A} = {4E9DCBE5-EDE4-4102-B600-1BD8BB8F6725}
+		{06F3BC5D-DC35-4E0A-B4DB-6E815447155E} = {38BEDBC3-C8B7-4039-A9CE-BEB6B7ACE039}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {055DE996-C436-454D-917D-711165E4FB4D}

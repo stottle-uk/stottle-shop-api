@@ -1,8 +1,8 @@
+using Data;
 using MongoDB.Driver;
 using stottle_shop_api.Categories.Models;
 using stottle_shop_api.Filters.Models;
 using stottle_shop_api.Products.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -23,20 +23,7 @@ namespace tests.Extensions
 
         public static ProductsTestingFixture Given_the_products_collection_has_products(this ProductsTestingFixture fixture, int maxProducts)
         {
-            var products = Enumerable
-                .Range(0, maxProducts)
-                .Select(count => new Product
-                {
-                    Id = count.ToString(),
-                    DisplayName = $"Product {count}",
-                    Price = count * 2.99,
-                    Order = new Random().Next(),
-                    IsActive = true,
-                    ImageLinks = Enumerable.Range(0, 2).Select(imgCount => imgCount).ToDictionary(key => key.ToString(), val => $"img{val}"),
-                    Category = count.GetCategory(),
-                    Filters = count.GetFilters().ToList()
-                })
-                .OrderBy(p => p.Id);
+            var products = TestProductData.GetProducts(maxProducts);
 
             fixture.Collection.InsertMany(products);
             return fixture;

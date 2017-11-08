@@ -1,6 +1,6 @@
+using Data.TestData;
 using MongoDB.Driver;
 using stottle_shop_api.Filters.Models;
-using System.Linq;
 using System.Net.Http;
 using tests.TestingFixtures;
 
@@ -19,22 +19,7 @@ namespace tests.Extensions
 
         public static FiltersTestingFixture Given_the_filters_collection_has_filters(this FiltersTestingFixture fixture, int maxFilters)
         {
-            var items = Enumerable.Range(0, 10).Select(count => new FilterItem
-            {
-                DisplayName = $"Item {count}",
-                Code = $"Item{count}"
-            });
-
-            var filters = Enumerable
-                .Range(0, maxFilters)
-                .Select(count => new Filter
-                {
-                    Id = count.ToString(),
-                    Code = $"fil{count}",
-                    DisplayName = $"Filter {count}",
-                    IsActive = true,
-                    Items = items
-                });
+            var filters = TestFilterData.GetFilter(maxFilters);
 
             fixture.Collection.InsertMany(filters);
             return fixture;

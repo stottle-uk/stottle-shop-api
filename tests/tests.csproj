@@ -12,6 +12,7 @@
     <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\src\Data\Data.csproj" />
     <ProjectReference Include="..\src\Server\Server.csproj" />
     <ProjectReference Include="..\src\Categories\Categories.csproj" />
     <ProjectReference Include="..\src\Products\Products.csproj" />

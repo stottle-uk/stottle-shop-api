@@ -1,6 +1,6 @@
+using Data.TestData;
 using MongoDB.Driver;
 using stottle_shop_api.Categories.Models;
-using System.Linq;
 using System.Net.Http;
 using tests.TestingFixtures;
 
@@ -19,22 +19,7 @@ namespace tests.Extensions
 
         public static CategoryTestingFixture Given_the_categories_collection_has_categories(this CategoryTestingFixture fixture, int maxCategories)
         {
-            var categories = Enumerable
-                .Range(0, 8)
-                .Select(count => new Category
-                {
-                    Id = count.ToString(),
-                    Code = $"cat{count}",
-                    DisplayName = $"Cat {count}",
-                    IsActive = true,
-                    ChildCategories = Enumerable.Range(0, 5).Select(childCount => new Category
-                    {
-                        Code = $"cat{childCount}",
-                        DisplayName = $"Child {childCount}",
-                        IsActive = true,
-                        Filters = Enumerable.Range(0, 3).Select(filCount => $"fil{filCount}"),
-                    })
-                });
+            var categories = TestCategoryData.GetCategories();
 
             fixture.Collection.InsertMany(categories);
             return fixture;
