@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using stottle_shop_api.Categories;
-using stottle_shop_api.Filters;
-
-namespace stottle_shop_api.Products.Models
+﻿namespace stottle_shop_api.Products.Models
 {
     public class ProductFilterCriteria
     {

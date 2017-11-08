@@ -1,9 +1,9 @@
-using System;
-using System.Net.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using MongoDB.Driver;
 using stottle_shop_api;
+using System;
+using System.Net.Http;
 
 namespace tests.TestingFixtures
 {

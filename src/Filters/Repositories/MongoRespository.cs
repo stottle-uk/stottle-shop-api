@@ -1,8 +1,8 @@
+using MongoDB.Driver;
+using stottle_shop_api.Filters.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MongoDB.Driver;
-using stottle_shop_api.Filters.Models;
 
 namespace stottle_shop_api.Filters.Repositories
 {

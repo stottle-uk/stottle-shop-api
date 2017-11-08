@@ -1,8 +1,8 @@
-using System.Net;
 using Newtonsoft.Json;
 using stottle_shop_api.Products.Models;
-using tests.TestingFixtures;
+using System.Net;
 using tests.Extensions;
+using tests.TestingFixtures;
 using Xunit;
 
 namespace tests.Server

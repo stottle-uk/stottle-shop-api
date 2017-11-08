@@ -1,6 +1,6 @@
-using System.Net;
 using Newtonsoft.Json;
 using stottle_shop_api.Filters.Models;
+using System.Net;
 using tests.Extensions;
 using tests.TestingFixtures;
 using Xunit;

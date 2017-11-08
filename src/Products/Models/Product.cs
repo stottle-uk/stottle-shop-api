@@ -1,6 +1,6 @@
-using System.Collections.Generic;
 using stottle_shop_api.Categories.Models;
 using stottle_shop_api.Filters.Models;
+using System.Collections.Generic;
 
 namespace stottle_shop_api.Products.Models
 {

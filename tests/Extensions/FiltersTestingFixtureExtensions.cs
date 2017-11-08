@@ -1,7 +1,7 @@
-using System.Linq;
-using System.Net.Http;
 using MongoDB.Driver;
 using stottle_shop_api.Filters.Models;
+using System.Linq;
+using System.Net.Http;
 using tests.TestingFixtures;
 
 namespace tests.Extensions

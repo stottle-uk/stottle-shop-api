@@ -1,7 +1,7 @@
-using System.Collections.Generic;
-using System.Linq;
 using MongoDB.Driver;
 using stottle_shop_api.Products.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace stottle_shop_api.Products.Extensions
 {

@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using stottle_shop_api.Filters;
 
 namespace stottle_shop_api.Categories.Models
 {
