@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 
-namespace stottle_shop_api.Data.TestData
+namespace stottle_shop_api.Categories.Data
 {
     public static class TestCategoryData
     {
-        public static IEnumerable<Category> GetCategories() => Enumerable
+        public static IEnumerable<Category> GetCategories() => 
+            Enumerable
                 .Range(0, 8)
                 .Select(count => new Category
                 {
@@ -20,8 +21,8 @@ namespace stottle_shop_api.Data.TestData
                         Code = $"cat{childCount}",
                         DisplayName = $"Child {childCount}",
                         IsActive = true,
-                        Filters = Enumerable.Range(0, 3).Select(filCount => $"fil{filCount}"),
+                        Filters = Enumerable.Range(0, 3).Select(filCount => $"filter{filCount}"),
                     })
                 });
-    }
+        }
 }

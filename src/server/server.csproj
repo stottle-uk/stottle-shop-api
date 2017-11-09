@@ -17,7 +17,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Categories\Categories.csproj" />
-    <ProjectReference Include="..\Data\Data.csproj" />
     <ProjectReference Include="..\Filters\Filters.csproj" />
     <ProjectReference Include="..\Products\Products.csproj" />
   </ItemGroup>

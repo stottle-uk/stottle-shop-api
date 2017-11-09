@@ -5,11 +5,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace stottle_shop_api.Data.TestData
+namespace stottle_shop_api.Products.Data
 {
     public static class TestProductData
     {
-        public static IEnumerable<Product> GetProducts(int maxProducts) => Enumerable
+        public static IEnumerable<Product> GetProducts(int maxProducts) => 
+            Enumerable
                 .Range(0, maxProducts)
                 .Select(count => new Product
                 {
