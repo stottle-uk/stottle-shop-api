@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace stottle_shop_api.Filters.Repositories
 {
-    public class MongoRepository : IReadFilters
+    public class MongoRepository : IReadFilters, IWriteFilters
     {
         private readonly IMongoCollection<Filter> _collection;
 
         public MongoRepository(IMongoDatabase db)
         {
             _collection = db.GetCollection<Filter>("filters");
+        }
+
+        public async Task InsertAsync(IEnumerable<Filter> filters)
+        {
+            await _collection.InsertManyAsync(filters);
         }
 
         public async Task<IEnumerable<Filter>> ReadAsync(IEnumerable<string> filterIds)

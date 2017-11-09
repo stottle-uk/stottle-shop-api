@@ -5,13 +5,18 @@ using System.Threading.Tasks;
 
 namespace stottle_shop_api.Categories.Repositories
 {
-    public class MongoRepository : IReadCategories
+    public class MongoRepository : IReadCategories, IWriteCategories
     {
         private readonly IMongoCollection<Category> _collection;
 
         public MongoRepository(IMongoDatabase db)
         {
             _collection = db.GetCollection<Category>("categories");
+        }
+
+        public async Task InsertAsync(IEnumerable<Category> categories)
+        {
+            await _collection.InsertManyAsync(categories);
         }
 
         public async Task<IEnumerable<Category>> ReadAsync()

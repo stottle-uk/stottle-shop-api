@@ -1,6 +1,7 @@
 ﻿using stottle_shop_api.Filters.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace stottle_shop_api.Data.TestData
 {
@@ -18,7 +19,7 @@ namespace stottle_shop_api.Data.TestData
                 .Range(0, maxFilters)
                 .Select(count => new Filter
                 {
-                    Id = count.ToString(),
+                    Id = Guid.NewGuid().ToString(),
                     Code = $"fil{count}",
                     DisplayName = $"Filter {count}",
                     IsActive = true,

@@ -11,6 +11,7 @@ namespace stottle_shop_api.Filters
             var mongoUrl = new MongoUrl(connectionString);
             services.AddTransient(ctx => new MongoClient(mongoUrl).GetDatabase(mongoUrl.DatabaseName));            
             services.AddTransient<IReadFilters, MongoRepository>();
+            services.AddTransient<IWriteFilters, MongoRepository>();
         }
     }
 }

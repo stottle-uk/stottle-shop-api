@@ -1,6 +1,7 @@
 ﻿using stottle_shop_api.Categories.Models;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace stottle_shop_api.Data.TestData
 {
@@ -10,7 +11,7 @@ namespace stottle_shop_api.Data.TestData
                 .Range(0, 8)
                 .Select(count => new Category
                 {
-                    Id = count.ToString(),
+                    Id = Guid.NewGuid().ToString(),
                     Code = $"cat{count}",
                     DisplayName = $"Cat {count}",
                     IsActive = true,

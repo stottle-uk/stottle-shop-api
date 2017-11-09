@@ -13,7 +13,7 @@ namespace stottle_shop_api.Data.TestData
                 .Range(0, maxProducts)
                 .Select(count => new Product
                 {
-                    Id = count.ToString(),
+                    Id = Guid.NewGuid().ToString(),
                     DisplayName = $"Product {count}",
                     Price = count * 2.99,
                     Order = new Random().Next(),

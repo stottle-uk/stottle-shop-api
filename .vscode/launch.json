@@ -28,27 +28,11 @@
                 }
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "USE_TEST_DATA": "true"                
             },
             "sourceFileMap": {
                 "/Views": "${workspaceRoot}/src/Server/Views"
-            }
-        },
-        {
-            "name": "Launch Tests",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceRoot}/tests/bin/Debug/netcoreapp2.0/Tests.dll",
-            "args": [
-                "test"
-            ],
-            "cwd": "${workspaceRoot}/rests",
-            "stopAtEntry": false,
-            "internalConsoleOptions": "openOnSessionStart",
-            "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
             }
         },
         {
