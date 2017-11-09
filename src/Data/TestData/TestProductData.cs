@@ -26,7 +26,7 @@ namespace stottle_shop_api.Data.TestData
 
         private static Category GetCategory(this int count)
         {
-            var catCode = count % 3 == 1 ? "123" : "321";
+            var catCode = count % 3 == 1 ? "cat0" : "cat1";
             return new Category
             {
                 DisplayName = $"Category {catCode}",
@@ -36,7 +36,7 @@ namespace stottle_shop_api.Data.TestData
 
         private static IEnumerable<FilterItem> GetFilters(this int count)
         {
-            var filterCode = count % 4 == 1 ? "123" : "321";
+            var filterCode = count % 4 == 1 ? "fil0" : "fil1";
 
             return Enumerable
                 .Range(0, 5)

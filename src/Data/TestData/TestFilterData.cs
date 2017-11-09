@@ -12,7 +12,7 @@ namespace stottle_shop_api.Data.TestData
             var items = Enumerable.Range(0, 10).Select(count => new FilterItem
             {
                 DisplayName = $"Item {count}",
-                Code = $"Item{count}"
+                Code = $"fil{count}"
             });
 
             return Enumerable
@@ -20,7 +20,7 @@ namespace stottle_shop_api.Data.TestData
                 .Select(count => new Filter
                 {
                     Id = Guid.NewGuid().ToString(),
-                    Code = $"fil{count}",
+                    Code = $"filter{count}",
                     DisplayName = $"Filter {count}",
                     IsActive = true,
                     Items = items

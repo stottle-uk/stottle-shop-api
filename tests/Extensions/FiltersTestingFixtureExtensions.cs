@@ -27,7 +27,7 @@ namespace tests.Extensions
 
         public static HttpResponseMessage When_filters_endpoint_called(this FiltersTestingFixture fixture)
         {
-            return fixture.HttpClient.GetAsync($"/api/filters/fil1,fil2,fil3").Result;
+            return fixture.HttpClient.GetAsync($"/api/filters/filter1,filter2,filter3").Result;
         }
     }
 }

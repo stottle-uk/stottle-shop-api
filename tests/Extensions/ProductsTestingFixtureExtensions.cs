@@ -58,7 +58,7 @@ namespace tests.Extensions
 
             sets.Add(3, new ProductFilterCriteria
             {
-                Category = "123",
+                Category = "cat0",
                 Filters = "",
                 SearchTerm = ""
             });
@@ -66,21 +66,21 @@ namespace tests.Extensions
             sets.Add(4, new ProductFilterCriteria
             {
                 Category = "",
-                Filters = "1231,1232",
+                Filters = "fil01,fil02",
                 SearchTerm = ""
             });
 
             sets.Add(5, new ProductFilterCriteria
             {
-                Category = "321",
-                Filters = "1231,1232",
+                Category = "cat1",
+                Filters = "fil01,fil02",
                 SearchTerm = ""
             });
 
             sets.Add(6, new ProductFilterCriteria
             {
-                Category = "321",
-                Filters = "1231,1232",
+                Category = "cat1",
+                Filters = "fil01,fil02",
                 SearchTerm = "product 1"
             });
 
