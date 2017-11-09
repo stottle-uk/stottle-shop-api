@@ -4,7 +4,7 @@ using stottle_shop_api.Filters.Repositories;
 
 namespace stottle_shop_api.Filters
 {
-    public static class ProductsModule
+    public static class FiltersModule
     {
         public static void AddFiltersModule(this IServiceCollection services, string connectionString)
         {

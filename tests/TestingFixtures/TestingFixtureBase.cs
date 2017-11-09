@@ -7,36 +7,31 @@ using System.Net.Http;
 
 namespace tests.TestingFixtures
 {
-    public abstract class TestingFixtureBase<T> : IDisposable
+    public abstract class TestingFixtureBase : IDisposable
     {
-        private readonly TestServer _server;
-        public IMongoCollection<T> Collection { get; private set; }
+        public TestServer Server { get; private set; }
         public HttpClient HttpClient { get; private set; }
+        public IMongoDatabase Database { get; private set; }
 
-        public TestingFixtureBase(string collectionName)
+        public TestingFixtureBase()
         {
-            _server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
             SetupHttpClient();
-            SetupCollection(collectionName);
+            SetupDatabase();
         }
 
-        private void SetupCollection(string collectionName)
+        private void SetupDatabase()
         {
-            var mongoUrl = new MongoUrl("mongodb://192.168.1.72:27017/stottle-shop");
+            var mongoUrl = new MongoUrl("mongodb://localhost:27017/stottle-shop");
             var client = new MongoClient(mongoUrl);
-            var db = client.GetDatabase(mongoUrl.DatabaseName);
-            db.DropCollection(collectionName);
-            Collection = db.GetCollection<T>(collectionName);
+            Database = client.GetDatabase(mongoUrl.DatabaseName);
         }
 
         private void SetupHttpClient()
         {
-            HttpClient = _server.CreateClient();
+            Server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
+            HttpClient = Server.CreateClient();
         }
 
-        public void Dispose()
-        {
-            _server.Dispose();
-        }
+        public abstract void Dispose();
     }
 }
