@@ -15,8 +15,8 @@ namespace tests.TestingFixtures
 
         public TestingFixtureBase()
         {
-            SetupHttpClient();
             SetupDatabase();
+            SetupHttpClient();
         }
 
         private void SetupDatabase()
