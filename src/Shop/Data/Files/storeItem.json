@@ -1,0 +1,11 @@
+{
+  "Name": "My First Store",
+  "Options": {
+    "DefaultCategorySetName": "MyFirstCategorySet",
+    "DisplayOldPrice": true,
+    "DisplayPromotionalText": true,
+    "DisplayLandingPage": true,
+    "DisplayBanners": true,
+    "DisplayReviews": true
+  }
+}

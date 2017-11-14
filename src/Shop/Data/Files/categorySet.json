@@ -1,0 +1,20 @@
+{
+  "Name": "MyFirstCategorySet",
+  "Items": [
+    {
+      "Code": "AA",
+      "ParentCode": "",
+      "Name": "Grocery"
+    },
+    {
+      "Code": "AABB",
+      "ParentCode": "AA",
+      "Name": "Hot Beverages"
+    },
+    {
+      "Code": "AABBCC",
+      "ParentCode": "AABB",
+      "Name": "Teas"
+    }
+  ]
+}

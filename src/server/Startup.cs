@@ -6,6 +6,7 @@ using stottle_shop_api.Categories;
 using stottle_shop_api.Extensions;
 using stottle_shop_api.Filters;
 using stottle_shop_api.Products;
+using stottle_shop_api.Shop;
 using System;
 
 namespace stottle_shop_api
@@ -21,10 +22,11 @@ namespace stottle_shop_api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = "mongodb://localhost:27017/stottle-shop";
+            var connectionString = Environment.GetEnvironmentVariable("MONGO_CONNECTION_STRING");
 
             services.AddMvc();
             services.AddCors();
+            services.AddShopModule(connectionString);
             services.AddProductsModule(connectionString);
             services.AddCategoriesModule(connectionString);
             services.AddFiltersModule(connectionString);

@@ -15,13 +15,21 @@ namespace tests.TestingFixtures
 
         public TestingFixtureBase()
         {
-            SetupDatabase();
+            var connectionString = Environment.GetEnvironmentVariable("MONGO_CONNECTION_STRING") ?? GetAndSetEnv();
+            SetupDatabase(connectionString);
             SetupHttpClient();
         }
 
-        private void SetupDatabase()
+        private string GetAndSetEnv()
         {
-            var mongoUrl = new MongoUrl("mongodb://localhost:27017/stottle-shop");
+            var connectionString = "mongodb://localhost:27017/stottle-shop";
+            Environment.SetEnvironmentVariable("MONGO_CONNECTION_STRING", connectionString);
+            return connectionString;
+        }
+
+        private void SetupDatabase(string connectionString)
+        {
+            var mongoUrl = new MongoUrl(connectionString);
             var client = new MongoClient(mongoUrl);
             Database = client.GetDatabase(mongoUrl.DatabaseName);
         }

@@ -1,0 +1,189 @@
+{
+  "filterSets": [
+    {
+      "Name": "TeaFlavour",
+      "Items": [
+        {
+          "Code": "1",
+          "Name": "Aniseed Fennel & Cardamom",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "2",
+          "Name": "Assam",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "3",
+          "Name": "Black & Green",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "4",
+          "Name": "Black Tea With Vanilla",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "5",
+          "Name": "Blended",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "6",
+          "Name": "Blended Decaf",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "7",
+          "Name": "Blended Everyday",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "8",
+          "Name": "China Dragon Pearls",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "9",
+          "Name": "Decaf",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "10",
+          "Name": "Earl Grey",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "11",
+          "Name": "Earl Grey Darjeeling",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "12",
+          "Name": "Earl Grey Tea",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "13",
+          "Name": "Elegant English Breakfast",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "14",
+          "Name": "English Breakfast",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "15",
+          "Name": "English Breakfast Black Tea",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "16",
+          "Name": "Gold",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "17",
+          "Name": "Green Jasmine",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "18",
+          "Name": "Green Lemon",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "19",
+          "Name": "Green Tea",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "20",
+          "Name": "Green Tea Light & Delicate Lemon",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "21",
+          "Name": "Lady Grey",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "22",
+          "Name": "Lemon & Ginger",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "23",
+          "Name": "Oat Flower Lavender Limeflower & Valerian",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "24",
+          "Name": "Original",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "25",
+          "Name": "Peppermint",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "26",
+          "Name": "Peppermint & Licorice",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "27",
+          "Name": "Peppermint Spearmint & Fieldmint",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "28",
+          "Name": "Pure Green",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "29",
+          "Name": "Rooibos",
+          "IsHiddenOnLoad": false
+        }
+      ]
+    },
+    {
+      "Name": "TeaForm",
+      "Items": [
+        {
+          "Code": "1",
+          "Name": "Tea Bags",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "2",
+          "Name": "Loose Tea",
+          "IsHiddenOnLoad": false
+        }
+      ]
+    },
+    {
+      "Name": "TeaSegment",
+      "Items": [
+        {
+          "Code": "1",
+          "Name": "Black Leaf Tea",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "2",
+          "Name": "Green Leaf Tea",
+          "IsHiddenOnLoad": false
+        },
+        {
+          "Code": "3",
+          "Name": "Fruit And Herbal Infusions",
+          "IsHiddenOnLoad": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "CategorySetFilters": [
+    {
+      "CategorySetName": "MyFirstCategorySet",
+      "CategoryCode": "AA",
+      "FilterSetName": "TeaFlavour"
+    },
+    {
+      "CategorySetName": "MyFirstCategorySet",
+      "CategoryCode": "AA",
+      "FilterSetName": "TeaForm"
+    },
+    {
+      "CategorySetName": "MyFirstCategorySet",
+      "CategoryCode": "AA",
+      "FilterSetName": "TeaSegment"
+    },
+    {
+      "CategorySetName": "MyFirstCategorySet",
+      "CategoryCode": "AABB",
+      "FilterSetName": "TeaFlavour"
+    },
+    {
+      "CategorySetName": "MyFirstCategorySet",
+      "CategoryCode": "AABB",
+      "FilterSetName": "TeaForm"
+    },
+    {
+      "CategorySetName": "MyFirstCategorySet",
+      "CategoryCode": "AABB",
+      "FilterSetName": "TeaSegment"
+    },
+    {
+      "CategorySetName": "MyFirstCategorySet",
+      "CategoryCode": "AABBCC",
+      "FilterSetName": "TeaFlavour"
+    },
+    {
+      "CategorySetName": "MyFirstCategorySet",
+      "CategoryCode": "AABBCC",
+      "FilterSetName": "TeaForm"
+    },
+    {
+      "CategorySetName": "MyFirstCategorySet",
+      "CategoryCode": "AABBCC",
+      "FilterSetName": "TeaSegment"
+    }
+  ]
+}

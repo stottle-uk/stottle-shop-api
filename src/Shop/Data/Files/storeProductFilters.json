@@ -1,0 +1,1156 @@
+{
+  "StoreProductFilters": [
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010065",
+      "FilterSetName": "TeaFlavour",
+      "Code": "10"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010201",
+      "FilterSetName": "TeaFlavour",
+      "Code": "14"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010539",
+      "FilterSetName": "TeaFlavour",
+      "Code": "14"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010713",
+      "FilterSetName": "TeaFlavour",
+      "Code": "10"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177018016",
+      "FilterSetName": "TeaFlavour",
+      "Code": "10"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177022389",
+      "FilterSetName": "TeaFlavour",
+      "Code": "14"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177067779",
+      "FilterSetName": "TeaFlavour",
+      "Code": "25"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177075101",
+      "FilterSetName": "TeaFlavour",
+      "Code": "22"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177085322",
+      "FilterSetName": "TeaFlavour",
+      "Code": "21"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177103071",
+      "FilterSetName": "TeaFlavour",
+      "Code": "17"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177103088",
+      "FilterSetName": "TeaFlavour",
+      "Code": "19"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177136499",
+      "FilterSetName": "TeaFlavour",
+      "Code": "7"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177233556",
+      "FilterSetName": "TeaFlavour",
+      "Code": "25"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177264574",
+      "FilterSetName": "TeaFlavour",
+      "Code": "20"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177283131",
+      "FilterSetName": "TeaFlavour",
+      "Code": "19"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "615357115156",
+      "FilterSetName": "TeaFlavour",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "615357118584",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "615357118775",
+      "FilterSetName": "TeaFlavour",
+      "Code": "6"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "850835000122",
+      "FilterSetName": "TeaFlavour",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000118004131",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000118081088",
+      "FilterSetName": "TeaFlavour",
+      "Code": "9"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000119098689",
+      "FilterSetName": "TeaFlavour",
+      "Code": "24"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208002450",
+      "FilterSetName": "TeaFlavour",
+      "Code": "9"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208014316",
+      "FilterSetName": "TeaFlavour",
+      "Code": "24"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208025497",
+      "FilterSetName": "TeaFlavour",
+      "Code": "24"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208030699",
+      "FilterSetName": "TeaFlavour",
+      "Code": "24"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208038954",
+      "FilterSetName": "TeaFlavour",
+      "Code": "29"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208050987",
+      "FilterSetName": "TeaFlavour",
+      "Code": "28"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208065103",
+      "FilterSetName": "TeaFlavour",
+      "Code": "18"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208069897",
+      "FilterSetName": "TeaFlavour",
+      "Code": "24"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208074747",
+      "FilterSetName": "TeaFlavour",
+      "Code": "3"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112009",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112061",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112085",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112092",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112108",
+      "FilterSetName": "TeaFlavour",
+      "Code": "16"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991000331",
+      "FilterSetName": "TeaFlavour",
+      "Code": "10"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991113673",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991222009",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991979019",
+      "FilterSetName": "TeaFlavour",
+      "Code": "28"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5032558009070",
+      "FilterSetName": "TeaFlavour",
+      "Code": "8"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5054268267519",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060123600087",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060123600094",
+      "FilterSetName": "TeaFlavour",
+      "Code": "5"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136750007",
+      "FilterSetName": "TeaFlavour",
+      "Code": "14"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136750014",
+      "FilterSetName": "TeaFlavour",
+      "Code": "11"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136753008",
+      "FilterSetName": "TeaFlavour",
+      "Code": "14"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136753015",
+      "FilterSetName": "TeaFlavour",
+      "Code": "11"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060229011107",
+      "FilterSetName": "TeaFlavour",
+      "Code": "26"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060229011565",
+      "FilterSetName": "TeaFlavour",
+      "Code": "13"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060229012005",
+      "FilterSetName": "TeaFlavour",
+      "Code": "19"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5065000523138",
+      "FilterSetName": "TeaFlavour",
+      "Code": "27"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5065000523183",
+      "FilterSetName": "TeaFlavour",
+      "Code": "23"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712029",
+      "FilterSetName": "TeaFlavour",
+      "Code": "24"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712319",
+      "FilterSetName": "TeaFlavour",
+      "Code": "24"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712388",
+      "FilterSetName": "TeaFlavour",
+      "Code": "24"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712494",
+      "FilterSetName": "TeaFlavour",
+      "Code": "24"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100805202",
+      "FilterSetName": "TeaFlavour",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100805240",
+      "FilterSetName": "TeaFlavour",
+      "Code": "14"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100805332",
+      "FilterSetName": "TeaFlavour",
+      "Code": "10"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8722700782759",
+      "FilterSetName": "TeaFlavour",
+      "Code": "9"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "9961133685379",
+      "FilterSetName": "TeaFlavour",
+      "Code": "15"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "9961133685971",
+      "FilterSetName": "TeaFlavour",
+      "Code": "12"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "9990611044188",
+      "FilterSetName": "TeaFlavour",
+      "Code": "4"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010065",
+      "FilterSetName": "TeaForm",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010201",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010539",
+      "FilterSetName": "TeaForm",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010713",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177018016",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177022389",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177067779",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177075101",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177085322",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177103071",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177103088",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177136499",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177233556",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177264574",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177283131",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "615357115156",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "615357118584",
+      "FilterSetName": "TeaForm",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "615357118775",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "850835000122",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000118004131",
+      "FilterSetName": "TeaForm",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000118081088",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000119098689",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208002450",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208014316",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208025497",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208030699",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208038954",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208050987",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208065103",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208069897",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208074747",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112009",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112061",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112085",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112092",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112108",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991000331",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991113673",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991222009",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991979019",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5032558009070",
+      "FilterSetName": "TeaForm",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5054268267519",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060123600087",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060123600094",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136750007",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136750014",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136753008",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136753015",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060229011107",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060229011565",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060229012005",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5065000523138",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5065000523183",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712029",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712319",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712388",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712494",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100805202",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100805240",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100805332",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8722700782759",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "9961133685379",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "9961133685971",
+      "FilterSetName": "TeaForm",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "9990611044188",
+      "FilterSetName": "TeaForm",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010065",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010201",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010539",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177010713",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177018016",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177022389",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177067779",
+      "FilterSetName": "TeaSegment",
+      "Code": "3"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177075101",
+      "FilterSetName": "TeaSegment",
+      "Code": "3"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177085322",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177103071",
+      "FilterSetName": "TeaSegment",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177103088",
+      "FilterSetName": "TeaSegment",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177136499",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177233556",
+      "FilterSetName": "TeaSegment",
+      "Code": "3"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177264574",
+      "FilterSetName": "TeaSegment",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "70177283131",
+      "FilterSetName": "TeaSegment",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "615357115156",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "615357118584",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "615357118775",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "850835000122",
+      "FilterSetName": "TeaSegment",
+      "Code": "3"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000118004131",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000118081088",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000119098689",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208002450",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208014316",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208025497",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208030699",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208038954",
+      "FilterSetName": "TeaSegment",
+      "Code": "3"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208050987",
+      "FilterSetName": "TeaSegment",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208065103",
+      "FilterSetName": "TeaSegment",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208069897",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5000208074747",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112009",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112061",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112085",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112092",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5010357112108",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991000331",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991113673",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991222009",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5021991979019",
+      "FilterSetName": "TeaSegment",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5032558009070",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5054268267519",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060123600087",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060123600094",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136750007",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136750014",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136753008",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060136753015",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060229011107",
+      "FilterSetName": "TeaSegment",
+      "Code": "3"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060229011565",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5060229012005",
+      "FilterSetName": "TeaSegment",
+      "Code": "2"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5065000523138",
+      "FilterSetName": "TeaSegment",
+      "Code": "3"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "5065000523183",
+      "FilterSetName": "TeaSegment",
+      "Code": "3"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712029",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712319",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712388",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100712494",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100805202",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100805240",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8712100805332",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "8722700782759",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "9961133685379",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "9961133685971",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    },
+    {
+      "StoreItemName": "My First Store",
+      "GTIN": "9990611044188",
+      "FilterSetName": "TeaSegment",
+      "Code": "1"
+    }
+  ]
+}
