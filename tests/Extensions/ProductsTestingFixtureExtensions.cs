@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using tests.TestingFixtures;
+using IdentityModel.Client;
 
 namespace tests.Extensions
 {
@@ -16,6 +17,13 @@ namespace tests.Extensions
                 .Where(p => p.DisplayName != "");
 
             fixture.Collection.DeleteMany(filter);
+            return fixture;
+        }
+
+        public static ProductsTestingFixture Given_the_user_is_authenticated(this ProductsTestingFixture fixture, string username, string password)
+        {
+            var tokenResponse = fixture.TokenClient.RequestResourceOwnerPasswordAsync(username, password, "api1").Result;
+            fixture.HttpClient.SetBearerToken(tokenResponse.AccessToken);
             return fixture;
         }
 

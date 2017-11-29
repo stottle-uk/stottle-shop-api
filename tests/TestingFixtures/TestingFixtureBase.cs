@@ -4,6 +4,7 @@ using MongoDB.Driver;
 using stottle_shop_api;
 using System;
 using System.Net.Http;
+using IdentityModel.Client;
 
 namespace tests.TestingFixtures
 {
@@ -12,12 +13,14 @@ namespace tests.TestingFixtures
         public TestServer Server { get; private set; }
         public HttpClient HttpClient { get; private set; }
         public IMongoDatabase Database { get; private set; }
+        public TokenClient TokenClient { get; private set; }
 
         public TestingFixtureBase()
         {
             var connectionString = Environment.GetEnvironmentVariable("MONGO_CONNECTION_STRING") ?? GetAndSetEnv();
             SetupDatabase(connectionString);
             SetupHttpClient();
+            SetupTokenClient();
         }
 
         private string GetAndSetEnv()
@@ -38,6 +41,12 @@ namespace tests.TestingFixtures
         {
             Server = new TestServer(new WebHostBuilder().UseStartup<Startup>());
             HttpClient = Server.CreateClient();
+        }
+
+        private void SetupTokenClient()
+        {
+            var disco = DiscoveryClient.GetAsync("http://localhost:63084").Result;
+            TokenClient = new TokenClient(disco.TokenEndpoint, "client", "secret");
         }
 
         public abstract void Dispose();

@@ -14,6 +14,7 @@ namespace tests.Server
         public Products(ProductsTestingFixture fixture)
         {
             _fixture = fixture
+                .Given_the_user_is_authenticated("username", "password")
                 .Given_the_products_collection_is_empty()
                 .Given_the_products_collection_has_products(2000);
         }

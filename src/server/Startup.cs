@@ -8,6 +8,8 @@ using stottle_shop_api.Filters;
 using stottle_shop_api.Products;
 using stottle_shop_api.Shop;
 using System;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication;
 
 namespace stottle_shop_api
 {
@@ -25,11 +27,29 @@ namespace stottle_shop_api
             var connectionString = Environment.GetEnvironmentVariable("MONGO_CONNECTION_STRING");
 
             services.AddMvc();
-            services.AddCors();
+
+            services
+                .AddCors()
+                .AddAuthentication(GetAuthenicationOptions)
+                .AddJwtBearer(GetJwtBearerOptions);
+
             services.AddShopModule(connectionString);
             services.AddProductsModule(connectionString);
             services.AddCategoriesModule(connectionString);
             services.AddFiltersModule(connectionString);
+        }
+
+        private static void GetAuthenicationOptions(AuthenticationOptions options)
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        }
+
+        private static void GetJwtBearerOptions(JwtBearerOptions options)
+        {
+            options.Authority = "http://localhost:63084";
+            options.Audience = "http://localhost:63084/resources";
+            options.RequireHttpsMetadata = false;
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -46,12 +66,21 @@ namespace stottle_shop_api
                         );
             }
 
-            if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("USE_TEST_DATA")))
-            {
-                app.UseTestData();
-            };
+            // if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable("USE_TEST_DATA")))
+            // {
+            //     app.UseTestData();
+            // };
 
-            app.UseMvcWithDefaultRoute();
+            app
+                .UseAuthentication()
+                .UseMvcWithDefaultRoute();
         }
     }
 }
+
+        /* 
+        1. create an identity server 4 which is used just for testing (in a container) - https://github.com/IdentityServer/IdentityServer4.Samples/tree/release/Docker - https://github.com/mtranter/IdentityServer4.Mock - https://github.com/emedbo/identityserver-test-template
+            a. use config whoch changes depending on environment with address of authentication server (mocked or real) 
+        2. get a new token for each test using the credentials of a user with certain claims
+        3. Decorate each controller with a customer authorize attribute that doesn't check the bearer token for tests
+         */
