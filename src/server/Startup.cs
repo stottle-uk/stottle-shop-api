@@ -47,9 +47,9 @@ namespace stottle_shop_api
 
         private static void GetJwtBearerOptions(JwtBearerOptions options)
         {
-            options.Authority = "http://localhost:63084";
-            options.Audience = "http://localhost:63084/resources";
-            options.RequireHttpsMetadata = false;
+            options.Authority = Environment.GetEnvironmentVariable("IDENTITY_SERVER_AUTHORITY");
+            options.Audience = Environment.GetEnvironmentVariable("IDENTITY_SERVER_AUDIENCE");
+            options.RequireHttpsMetadata = bool.Parse(Environment.GetEnvironmentVariable("IDENTITY_SERVER_REQUIREHTTPSMETADATA"));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

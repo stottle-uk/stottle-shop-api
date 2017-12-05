@@ -29,7 +29,11 @@
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development",
-                "USE_TEST_DATA": "true"                
+                "USE_TEST_DATA": "true",
+                "IDENTITY_SERVER_AUTHORITY": "",
+                "IDENTITY_SERVER_AUDIENCE": "",   
+                "IDENTITY_SERVER_REQUIREHTTPSMETADATA": "true",
+                "MONGO_CONNECTION_STRING": "mongodb://localhost:27017/stottle-shop"   
             },
             "sourceFileMap": {
                 "/Views": "${workspaceRoot}/src/Server/Views"
